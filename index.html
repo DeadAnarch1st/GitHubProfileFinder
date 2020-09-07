@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Profile Finder</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="script.js"></script>
+    <style>
+        img{
+            width: 25%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form id="userForm">
+            <div class="form-group">
+                <label> GitHub Username: </label>
+                <input type="text" id="username" class="form-control">
+                
+            </div>
+        </form>
+        <div id="profile"></div>
+    </div>
+    <script>
+        document.getElementById('userForm').addEventListener('submit', getProfile, false);
+    </script>
+</body>
+</html>
+
